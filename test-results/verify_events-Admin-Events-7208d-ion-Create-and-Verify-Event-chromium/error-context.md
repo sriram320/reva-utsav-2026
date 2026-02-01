@@ -1,0 +1,110 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - heading "Reva Utsav Portal" [level=3] [ref=e6]
+        - paragraph [ref=e7]: Secure Access via Google
+      - generic [ref=e9]:
+        - tablist [ref=e10]:
+          - tab "Registration Desk" [selected] [ref=e11]
+          - tab "Admin Command" [ref=e12]
+        - tabpanel "Registration Desk" [ref=e13]:
+          - generic [ref=e14]:
+            - img [ref=e16]
+            - heading "Volunteer Access" [level=3] [ref=e19]
+            - paragraph [ref=e20]: For Registration Desk Operations
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - text: Staff Email
+              - textbox "Staff Email" [ref=e23]:
+                - /placeholder: volunteer@reva.edu
+            - generic [ref=e24]:
+              - text: Password
+              - textbox "Password" [ref=e25]:
+                - /placeholder: ••••••••
+            - button "Access Desk" [ref=e26]
+  - generic [active]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - navigation [ref=e32]:
+            - button "previous" [disabled] [ref=e33]:
+              - img "previous" [ref=e34]
+            - generic [ref=e36]:
+              - generic [ref=e37]: 1/
+              - text: "1"
+            - button "next" [disabled] [ref=e38]:
+              - img "next" [ref=e39]
+          - img
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - img [ref=e43]
+            - generic "Latest available version is detected (16.1.6)." [ref=e45]: Next.js 16.1.6
+            - generic [ref=e46]: Turbopack
+          - img
+      - dialog "Build Error" [ref=e48]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - generic [ref=e55]: Build Error
+              - generic [ref=e56]:
+                - button "Copy Error Info" [ref=e57] [cursor=pointer]:
+                  - img [ref=e58]
+                - link "Go to related documentation" [ref=e60] [cursor=pointer]:
+                  - /url: https://nextjs.org/docs/messages/module-not-found
+                  - img [ref=e61]
+                - button "Attach Node.js inspector" [ref=e63] [cursor=pointer]:
+                  - img [ref=e64]
+            - generic [ref=e73]: "Module not found: Can't resolve 'sonner'"
+          - generic [ref=e75]:
+            - generic [ref=e77]:
+              - img [ref=e79]
+              - generic [ref=e82]: ./src/app/admin/events/page.tsx (9:1)
+              - button "Open in editor" [ref=e83] [cursor=pointer]:
+                - img [ref=e85]
+            - generic [ref=e88]:
+              - generic [ref=e89]: Module not found
+              - generic [ref=e90]: ": Can't resolve"
+              - text: "'sonner'"
+              - generic [ref=e91]: 7 |
+              - text: import
+              - generic [ref=e92]: "{"
+              - text: Plus, Trash2, Eye, Trophy, X, Upload, UserPlus, Calendar, MapPin, Users, IndianRupee
+              - generic [ref=e93]: "}"
+              - text: from "lucide-react";
+              - generic [ref=e94]: 8 |
+              - text: import Link from "next/link"; >
+              - generic [ref=e95]: 9 |
+              - text: import
+              - generic [ref=e96]: "{ toast }"
+              - text: from "sonner";
+              - generic [ref=e97]: "|"
+              - text: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              - generic [ref=e98]: 10 |
+              - generic [ref=e99]: 11 |
+              - text: interface EventCoordinator
+              - generic [ref=e100]: "{"
+              - generic [ref=e101]: 12 |
+              - generic [ref=e102]: name
+              - text: ":"
+              - generic [ref=e103]: string
+              - text: ;
+              - generic [ref=e104]:
+                - text: "Import traces: Client Component Browser: ./src/app/admin/events/page.tsx [Client Component Browser] ./src/app/admin/events/page.tsx [Server Component] Client Component SSR: ./src/app/admin/events/page.tsx [Client Component SSR] ./src/app/admin/events/page.tsx [Server Component]"
+                - link "https://nextjs.org/docs/messages/module-not-found" [ref=e105] [cursor=pointer]:
+                  - /url: https://nextjs.org/docs/messages/module-not-found
+        - generic [ref=e106]: "1"
+        - generic [ref=e107]: "2"
+    - generic [ref=e112] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=e113]:
+        - img [ref=e114]
+      - button "Open issues overlay" [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]: "0"
+          - generic [ref=e121]: "1"
+        - generic [ref=e122]: Issue
+  - alert [ref=e123]
+```

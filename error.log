@@ -1,0 +1,77 @@
+.next/dev/types/validator.ts(666,31): error TS2344: Type 'typeof import("C:/Users/srira/.gemini/antigravity/scratch/reva-utsav-2026/src/app/api/events/[id]/register/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/events/[id]/register">'.
+  Types of property 'POST' are incompatible.
+    Type '(req: Request, { params }: { params: { id: string; }; }) => Promise<NextResponse<{ error: string; }> | NextResponse<{ success: boolean; registration: { id: number; userId: number | null; eventId: number | null; status: string | null; paymentId: string | null; registeredAt: Date | null; couponCode: string | null; }; ...' is not assignable to type '(request: NextRequest, context: { params: Promise<{ id: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ id: string; }>; }' is not assignable to type '{ params: { id: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'id' is missing in type 'Promise<{ id: string; }>' but required in type '{ id: string; }'.
+.next/dev/types/validator.ts(675,31): error TS2344: Type 'typeof import("C:/Users/srira/.gemini/antigravity/scratch/reva-utsav-2026/src/app/api/events/[id]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/events/[id]">'.
+  Types of property 'GET' are incompatible.
+    Type '(req: Request, { params }: { params: { id: string; }; }) => Promise<NextResponse<{ error: string; }> | NextResponse<{ event: { id: number; name: string; description: string | null; category: string; ... 6 more ...; coordinators: unknown; }; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ id: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ id: string; }>; }' is not assignable to type '{ params: { id: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'id' is missing in type 'Promise<{ id: string; }>' but required in type '{ id: string; }'.
+.next/types/validator.ts(666,31): error TS2344: Type 'typeof import("C:/Users/srira/.gemini/antigravity/scratch/reva-utsav-2026/src/app/api/events/[id]/register/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/events/[id]/register">'.
+  Types of property 'POST' are incompatible.
+    Type '(req: Request, { params }: { params: { id: string; }; }) => Promise<NextResponse<{ error: string; }> | NextResponse<{ success: boolean; registration: { id: number; userId: number | null; eventId: number | null; status: string | null; paymentId: string | null; registeredAt: Date | null; couponCode: string | null; }; ...' is not assignable to type '(request: NextRequest, context: { params: Promise<{ id: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ id: string; }>; }' is not assignable to type '{ params: { id: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'id' is missing in type 'Promise<{ id: string; }>' but required in type '{ id: string; }'.
+.next/types/validator.ts(675,31): error TS2344: Type 'typeof import("C:/Users/srira/.gemini/antigravity/scratch/reva-utsav-2026/src/app/api/events/[id]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/events/[id]">'.
+  Types of property 'GET' are incompatible.
+    Type '(req: Request, { params }: { params: { id: string; }; }) => Promise<NextResponse<{ error: string; }> | NextResponse<{ event: { id: number; name: string; description: string | null; category: string; ... 6 more ...; coordinators: unknown; }; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ id: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ id: string; }>; }' is not assignable to type '{ params: { id: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'id' is missing in type 'Promise<{ id: string; }>' but required in type '{ id: string; }'.
+src/app/admin/events/page.tsx(9,23): error TS2307: Cannot find module 'sonner' or its corresponding type declarations.
+src/app/admin/events/page.tsx(433,37): error TS2322: Type '"link"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+src/app/admin/financials/page.tsx(197,45): error TS2322: Type '"default" | "outline"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+  Type '"default"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+src/app/admin/financials/page.tsx(204,45): error TS2322: Type '"default" | "outline"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+  Type '"default"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+src/app/admin/financials/page.tsx(251,45): error TS2322: Type '"default" | "outline"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+  Type '"default"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+src/app/admin/financials/page.tsx(258,45): error TS2322: Type '"default" | "outline"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+  Type '"default"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+src/app/admin/financials/page.tsx(265,45): error TS2322: Type '"default" | "outline"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+  Type '"default"' is not assignable to type '"primary" | "secondary" | "outline" | "ghost" | "destructive" | undefined'.
+src/app/api/accommodation/route.ts(53,48): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(value: { userId: number | SQL<unknown> | Placeholder<string, any>; id?: number | SQL<unknown> | Placeholder<string, any> | undefined; createdAt?: Date | SQL<...> | Placeholder<...> | null | undefined; status?: string | ... 3 more ... | undefined; checkedIn?: boolean | ... 3 more ... | undefined; paymentStatus?: string | ... 3 more ... | undefined; assignedPropertyId?: number | ... 3 more ... | undefined; }): PgInsertBase<...>', gave the following error.
+    Object literal may only specify known properties, and 'checkInDate' does not exist in type '{ userId: number | SQL<unknown> | Placeholder<string, any>; id?: number | SQL<unknown> | Placeholder<string, any> | undefined; createdAt?: Date | SQL<...> | Placeholder<...> | null | undefined; status?: string | ... 3 more ... | undefined; checkedIn?: boolean | ... 3 more ... | undefined; paymentStatus?: string | .....'.
+  Overload 2 of 2, '(values: { userId: number | SQL<unknown> | Placeholder<string, any>; id?: number | SQL<unknown> | Placeholder<string, any> | undefined; createdAt?: Date | SQL<...> | Placeholder<...> | null | undefined; status?: string | ... 3 more ... | undefined; checkedIn?: boolean | ... 3 more ... | undefined; paymentStatus?: string | ... 3 more ... | undefined; assignedPropertyId?: number | ... 3 more ... | undefined; }[]): PgInsertBase<...>', gave the following error.
+    Object literal may only specify known properties, and 'userId' does not exist in type '{ userId: number | SQL<unknown> | Placeholder<string, any>; id?: number | SQL<unknown> | Placeholder<string, any> | undefined; createdAt?: Date | SQL<...> | Placeholder<...> | null | undefined; status?: string | ... 3 more ... | undefined; checkedIn?: boolean | ... 3 more ... | undefined; paymentStatus?: string | .....'.
+src/app/api/admin/accommodation/route.ts(11,40): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/accommodation/route.ts(11,74): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/accommodation/route.ts(28,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/accommodation/route.ts(52,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/coupons/route.ts(12,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/coupons/route.ts(34,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/events/route.ts(11,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/events/route.ts(28,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/events/route.ts(63,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/events/route.ts(94,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/financials/route.ts(11,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/financials/route.ts(29,39): error TS18047: 's.amountDue' is possibly 'null'.
+src/app/api/admin/financials/route.ts(51,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/financials/route.ts(81,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/settings/route.ts(26,55): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/ticketing/batch/route.ts(11,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/ticketing/batch/route.ts(42,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/ticketing/batch/route.ts(66,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/ticketing/route.ts(11,40): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/ticketing/route.ts(11,74): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/ticketing/status/route.ts(8,39): error TS2339: Property 'role' does not exist on type 'User'.
+src/app/api/admin/users/[userId]/accommodation/route.ts(15,35): error TS2552: Cannot find name 'getCurrentUser'. Did you mean 'currentUser'?
+src/app/api/admin/users/[userId]/accommodation/route.ts(34,52): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(value: { userId: number | SQL<unknown> | Placeholder<string, any>; id?: number | SQL<unknown> | Placeholder<string, any> | undefined; createdAt?: Date | SQL<...> | Placeholder<...> | null | undefined; status?: string | ... 3 more ... | undefined; checkedIn?: boolean | ... 3 more ... | undefined; paymentStatus?: string | ... 3 more ... | undefined; assignedPropertyId?: number | ... 3 more ... | undefined; }): PgInsertBase<...>', gave the following error.
+    Object literal may only specify known properties, and 'roomAllotted' does not exist in type '{ userId: number | SQL<unknown> | Placeholder<string, any>; id?: number | SQL<unknown> | Placeholder<string, any> | undefined; createdAt?: Date | SQL<...> | Placeholder<...> | null | undefined; status?: string | ... 3 more ... | undefined; checkedIn?: boolean | ... 3 more ... | undefined; paymentStatus?: string | .....'.
+  Overload 2 of 2, '(values: { userId: number | SQL<unknown> | Placeholder<string, any>; id?: number | SQL<unknown> | Placeholder<string, any> | undefined; createdAt?: Date | SQL<...> | Placeholder<...> | null | undefined; status?: string | ... 3 more ... | undefined; checkedIn?: boolean | ... 3 more ... | undefined; paymentStatus?: string | ... 3 more ... | undefined; assignedPropertyId?: number | ... 3 more ... | undefined; }[]): PgInsertBase<...>', gave the following error.
+    Object literal may only specify known properties, and 'userId' does not exist in type '{ userId: number | SQL<unknown> | Placeholder<string, any>; id?: number | SQL<unknown> | Placeholder<string, any> | undefined; createdAt?: Date | SQL<...> | Placeholder<...> | null | undefined; status?: string | ... 3 more ... | undefined; checkedIn?: boolean | ... 3 more ... | undefined; paymentStatus?: string | .....'.
+src/app/api/events/[id]/register/route.ts(36,14): error TS2339: Property 'where' does not exist on type 'Omit<PgSelectBase<"registrations", { id: PgColumn<{ name: "id"; tableName: "registrations"; dataType: "number"; columnType: "PgSerial"; data: number; driverParam: number; notNull: true; hasDefault: true; isPrimaryKey: true; ... 5 more ...; generated: undefined; }, {}, {}>; ... 5 more ...; couponCode: PgColumn<...>; ...'.
+src/app/events/[id]/register/page.tsx(23,5): error TS2304: Cannot find name 'useEffect'.
+src/auth.ts(4,32): error TS2307: Cannot find module '@auth/drizzle-adapter' or its corresponding type declarations.
+src/auth.ts(83,30): error TS2339: Property 'role' does not exist on type 'AdapterUser & User'.
+src/components/features/RegistrationDeskInterface.tsx(208,17): error TS2578: Unused '@ts-expect-error' directive.
