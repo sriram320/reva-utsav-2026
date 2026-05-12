@@ -132,8 +132,15 @@ export default function RegistrationDeskInterface({ mode, onBack }: Registration
             }
             try {
                 // Determine if searching by ID or Name
-                const url = `/api/admin/users?query=${encodeURIComponent(searchQuery)}`;
-
+                const cleanQuery = searchQuery.replace(/[^a-zA-Z0-9]/g, ''); // Sanitize query
+                const url = `/api/admin/users?query=${encodeURIComponent(cleanQuery)}`;
+                // Validate URL against allowlist to prevent SSRF
+                const allowedUrls = ['revautsav.com', 'api.admin'];
+                const isValidUrl = allowedUrls.some(allowed => url.includes(allowed));
+                if (!isValidUrl) {
+                    console.error('Blocked request to non-allowed URL');
+                    return;
+                }
                 const res = await fetch(url);
                 const data = await res.json();
                 setParticipants(data.users || []); // Assuming API returns users
